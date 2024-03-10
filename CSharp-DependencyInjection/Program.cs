@@ -2,9 +2,14 @@
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Learning Dependency Injection!");
+
+            Messenger whatsappMessenger = new Messenger(new WhatsAppSender());
+
+            whatsappMessenger.SendMessage("This is a whatsapp message", "john doe");
         }
+
     }
 }

@@ -6,6 +6,7 @@
         public void SendMessage(string message, string recipient)
         {
             // Code to send an email
+            Console.WriteLine($"Hi {recipient}, {message}");
         }
     }
 }
